@@ -1,3 +1,8 @@
+---
+layout: default
+title: Day 3 - Reconnaissance
+nav_order: 3
+---
 # Day 3: Reconnaissance Detection & PSAD
 
 ## Objective

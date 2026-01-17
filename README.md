@@ -2,7 +2,7 @@
 layout: default
 title: Project Overview
 nav_order: 1
-description: "Abhi's SOC Lab Project Home"
+description: "Abhimanyu's SOC Lab Project Home"
 permalink: /
 ---
 

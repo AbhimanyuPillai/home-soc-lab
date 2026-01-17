@@ -1,3 +1,8 @@
+---
+layout: default
+title: Day 2 - Custom Rules
+nav_order: 2
+---
 # Day 2: Web Security & Custom Rule Engineering
 
 ## Objective

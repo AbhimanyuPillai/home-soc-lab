@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Day 2 - Custom Rules
-nav_order: 2
+title: "Chapter 2: Web Defense & NIDS"
+nav_order: 3
 ---
-# Day 2: Web Security & Custom Rule Engineering
+# Chapter 2: Web Defense & NIDS
 
 ## Objective
 Simulate a production web environment and engineer custom detection rules for non-standard security events.

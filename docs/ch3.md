@@ -29,6 +29,9 @@ The lab environment utilizes a VirtualBox **Host-Only Network**. This configurat
 ### Logical Topology
 
 
+```markdown
+### Logical Topology
+
 ```text
 [ Kali Linux ] <------> [ VirtualBox Host-Only ] <------> [ Ubuntu Server ]
 (192.168.56.x)             (Internal Switch)             (192.168.56.y)

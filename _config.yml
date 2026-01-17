@@ -1,3 +1,3 @@
-theme: jekyll-theme-hacker
-title: Abhi's SOC Lab Documentation
-description: A technical journal of my Cybersecurity Home Lab project.
+title: Abhi's SOC Lab
+description: Technical documentation for my Wazuh-powered home lab.
+remote_theme: just-the-docs/just-the-docs

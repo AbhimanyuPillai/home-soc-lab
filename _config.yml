@@ -1,3 +1,8 @@
 title: Abhi's SOC Lab
 description: Technical documentation for my Wazuh-powered home lab.
 remote_theme: just-the-docs/just-the-docs
+
+# Add this if you want the chapters to be neatly nested
+nav_external_links:
+  - title: My GitHub
+    url: https://github.com/your-username

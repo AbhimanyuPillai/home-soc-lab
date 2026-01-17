@@ -44,7 +44,6 @@ Specifically, this rule correlates repeated Nginx `403 Forbidden` errors to iden
 
 ### Custom Wazuh Rule (local_rules.xml)
 
-```
 {% highlight xml %}
 <group name="web,appserver,nginx,">
   <rule id="100001" level="10" frequency="5" timeframe="60">

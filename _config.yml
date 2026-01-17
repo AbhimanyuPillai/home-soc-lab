@@ -1,6 +1,7 @@
 title: Abhimanyu's SOC Lab
 description: Technical documentation for my Wazuh-powered home lab.
 remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
 
 # Add this if you want the chapters to be neatly nested
 nav_external_links:

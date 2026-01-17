@@ -22,13 +22,35 @@ I deployed **Suricata** to monitor network traffic at the packet level.
 ## 3. Detection Engineering: Custom XML Rules
 Standard SIEM rules are often too broad. To improve visibility, I manually edited the Wazuh Manager's `local_rules.xml` to create environment-specific alerts.
 
-### Scenario: Detecting Directory Traversal / Scans
-I engineered a rule to detect a high frequency of **403 Forbidden** errors. This pattern often indicates an automated fuzzer or an attacker attempting to access restricted directories.
+### Scenario: Detecting Directory Traversal and Automated Scans
 
-`xml
+I engineered a custom correlation rule to detect automated directory traversal and web scanning activity. Instead of triggering on a single `403 Forbidden` response, this rule looks for multiple occurrences within a short time window, which is a high-fidelity indicator of a web fuzzer or reconnaissance activity.
+
+Specifically, this rule correlates repeated Nginx `403 Forbidden` errors to identify potential automated attempts to access restricted directories or sensitive paths.
+
+---
+
+### Detection Logic
+
+**Base rule triggered:**  
+`31101 – Nginx: 403 Forbidden (access denied)`
+
+**Correlation approach:**  
+- Monitors repeated 403 errors  
+- Threshold: 5 events in 60 seconds  
+- Focused on reconnaissance and web scanning behavior  
+
+---
+
+### Custom Wazuh Rule (local_rules.xml)
+
+```xml
 <group name="web,appserver,nginx,">
-  <rule id="100001" level="10">
+  <rule id="100001" level="10" frequency="5" timeframe="60">
     <if_sid>31101</if_sid>
-    <description>Nginx: High frequency of 403 Forbidden errors (Potential Web Scan)</description>
+    <description>
+      Nginx: Multiple 403 Forbidden errors detected. Possible automated scan or directory traversal attempt.
+    </description>
+    <group>web_scan,reconnaissance,</group>
   </rule>
-</group>`
+</group>

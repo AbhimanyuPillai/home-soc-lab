@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Day 1 - Deployment
-nav_order: 1
+title: "Chapter 1: Infrastructure & Setup"
+nav_order: 2
 ---
-# Day 1: Infrastructure & SIEM Deployment
+# Chapter 1: Infrastructure & Setup
 
 ## Objective
 Establish the primary communication link between the Wazuh Manager and the Ubuntu Endpoint.

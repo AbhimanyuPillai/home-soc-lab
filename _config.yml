@@ -1,9 +1,26 @@
-title: Abhimanyu's SOC Lab
-description: Technical documentation for my Wazuh-powered home lab.
+# Project Information
+title: "Abhimanyu's SOC Lab Documentation"
+description: "A technical journal of my Cybersecurity Home Lab project."
+url: "https://AbhimanyuPillai.github.io"
+baseurl: "/home-soc-lab" 
+
+# Theme Settings
 remote_theme: just-the-docs/just-the-docs
+
+# Branding & Style
+# Options for color_scheme: dark, light (default), or nil
 color_scheme: dark
 
-# Add this if you want the chapters to be neatly nested
-nav_external_links:
-  - title: My GitHub
-    url: https://github.com/AbhimanyuPillai
+# Navigation Settings
+aux_links:
+  "View My GitHub": "https://github.com/AbhimanyuPillai"
+  "SOC Lab Repository": "https://github.com/AbhimanyuPillai/home-soc-lab"
+
+# Search Settings
+search_enabled: true
+search_tokenizer_separator: /[\s/]+/
+search_rel_url: true
+
+# Footer Settings
+last_edit_enabled: true
+last_edit_last_updated_label: "Last Updated"

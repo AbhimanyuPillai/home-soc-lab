@@ -1,7 +1,9 @@
 ---
-layout: home
+layout: default
 title: Project Overview
 nav_order: 1
+description: "Abhi's SOC Lab Project Home"
+permalink: /
 ---
 
 # 🛡️ SOC Analyst Home Lab Project

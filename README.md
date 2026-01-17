@@ -1,29 +1,21 @@
 ---
-layout: default
-title: Home
-nav_order: 0
+layout: home
+title: Project Overview
+nav_order: 1
 ---
+
 # 🛡️ SOC Analyst Home Lab Project
-Welcome to my professional documentation for my Cybersecurity Home Lab. This project documents my journey in building a functional **Security Operations Center (SOC)** from scratch to detect, analyze, and mitigate real-world cyber attacks.
+Welcome to the official documentation for my Cybersecurity Home Lab. This project is a comprehensive simulation of a Security Operations Center environment designed to detect, analyze, and automatically remediate real-world attack vectors.
 
-## 🏗️ Project Architecture
-* **SIEM/Manager:** Wazuh (The Brain)
-* **Endpoint (Victim):** Ubuntu Server (Hardened with Nginx, Suricata, & PSAD)
-* **Attacker:** Kali Linux (Reconnaissance & Exploitation)
+## 🏗️ The Lab Ecosystem
+* **Manager:** Wazuh SIEM (Centralized Monitoring & Response)
+* **Endpoint:** Ubuntu Server (Hardened Victim Node)
+* **Attacker:** Kali Linux (Penetration Testing Node)
 
-## 📑 Detailed Lab Logs
-Select a phase below to see the technical documentation, including troubleshooting and custom configurations:
-
-* [**Day 1: Deployment & Connectivity**](docs/day1.md) - Setting up the Wazuh Manager and Agent.
-* [**Day 2: Web Security & Custom Rules**](docs/day2.md) - IDS integration and manual XML rule engineering.
-* [**Day 3: Reconnaissance & PSAD**](docs/day3.md) - Nmap scanning and port scan detection.
-* [**Day 4: Brute Force & Active Response**](docs/day4.md) - Automated incident remediation.
+## 🎯 Project Goals
+* **Visibility:** Bridging network and host-level telemetry into a single pane of glass.
+* **Analysis:** Engineering custom XML rules to escalate critical security events.
+* **Automation:** Implementing "Active Response" to neutralize threats at the speed of code.
 
 ---
-
-## 🚀 Key Skills Demonstrated
-* **SIEM Management:** Wazuh Indexer & Dashboard configuration.
-* **Network Security:** Suricata IDS & PSAD setup.
-* **Automated Incident Response:** Implementing Active Response "Kill Chains."
-* **Linux Hardening:** Log analysis and `iptables` management.
-* **Troubleshooting:** Resolving complex VirtualBox networking conflicts.
+*Scroll through the sidebar chapters to explore the technical deep-dives of each phase.*

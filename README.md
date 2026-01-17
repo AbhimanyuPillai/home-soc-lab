@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+nav_order: 0
+---
 # 🛡️ SOC Analyst Home Lab Project
 Welcome to my professional documentation for my Cybersecurity Home Lab. This project documents my journey in building a functional **Security Operations Center (SOC)** from scratch to detect, analyze, and mitigate real-world cyber attacks.
 

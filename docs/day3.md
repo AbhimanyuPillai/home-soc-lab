@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Day 3 - Reconnaissance
-nav_order: 3
+title: "Chapter 3: Reconnaissance & Monitoring"
+nav_order: 4
 ---
-# Day 3: Reconnaissance Detection & PSAD
+# Chapter 3: Reconnaissance & Monitoring
 
 ## Objective
 Detect stealthy reconnaissance attempts and resolve complex virtual networking conflicts.

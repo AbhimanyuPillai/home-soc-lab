@@ -25,10 +25,10 @@ Standard SIEM rules are often too broad. To improve visibility, I manually edite
 ### Scenario: Detecting Directory Traversal / Scans
 I engineered a rule to detect a high frequency of **403 Forbidden** errors. This pattern often indicates an automated fuzzer or an attacker attempting to access restricted directories.
 
-```xml
+`xml
 <group name="web,appserver,nginx,">
   <rule id="100001" level="10">
     <if_sid>31101</if_sid>
     <description>Nginx: High frequency of 403 Forbidden errors (Potential Web Scan)</description>
   </rule>
-</group>
+</group>`

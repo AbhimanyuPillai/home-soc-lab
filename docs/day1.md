@@ -1,3 +1,8 @@
+---
+layout: default
+title: Day 1 - Deployment
+nav_order: 1
+---
 # Day 1: Infrastructure & SIEM Deployment
 
 ## Objective

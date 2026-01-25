@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Chapter 5: The Alerting Pipeline & FIM"
-parent: Project Overview
 nav_order: 6
 ---
 

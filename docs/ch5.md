@@ -66,4 +66,3 @@ I simulated a password vault modification by updating the metadata of `/etc/shad
 
 ---
 
-**Next Steps:** With the notification pipeline established, I am moving toward "Active Response Phase 2"—automatically isolating compromised hosts based on these FIM triggers.
